@@ -1,0 +1,443 @@
+:root {
+    --containerWidth: 1000px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.container {
+    display: flex;
+    border-radius:calc(var(--containerWidth)*.001*20);
+    width: var(--containerWidth);
+    background-color: #B7B7B7;
+    flex-direction: column;
+    padding-bottom: calc(var(--containerWidth)*.001*500);
+    margin:0 auto
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: calc(var(--containerWidth)*.001*828);
+    height: calc(var(--containerWidth)*.001*102);
+    left: calc(var(--containerWidth)*.001*186);
+    top: calc(var(--containerWidth)*.001*19);
+    margin-bottom: calc(var(--containerWidth)*.001*10);
+}
+
+.bigPlusContainer {
+    width: calc(var(--containerWidth)*.001*82);
+    height: calc(var(--containerWidth)*.001*82);
+    left: calc(var(--containerWidth)*.001*-373);
+    position: relative;
+}
+
+.bigPlusCircle {
+    width: calc(var(--containerWidth)*.001*82);
+    height: calc(var(--containerWidth)*.001*82);
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #474747;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+}
+
+.bigPlusRect1 {
+    width: calc(var(--containerWidth)*.001*6);
+    height: calc(var(--containerWidth)*.001*51);
+    left: calc(var(--containerWidth)*.001*38);
+    top: calc(var(--containerWidth)*.001*16);
+    position: absolute;
+    background: #D9D9D9
+}
+
+.bigPlusRect2 {
+    width: calc(var(--containerWidth)*.001*6);
+    height: calc(var(--containerWidth)*.001*51);
+    left: calc(var(--containerWidth)*.001*15.5);
+    top: calc(var(--containerWidth)*.001*44.5);
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    background: #D9D9D9
+}
+
+.bigMinusCircle {
+    width: calc(var(--containerWidth)*.001*53);
+    height: calc(var(--containerWidth)*.001*53);
+    position: absolute;
+    background: #B7B7B7;
+}
+
+.bigMinusRect1 {
+    width: 8%;
+    height: 62%;
+    left: 19%;
+    top: 53%;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    background: #474747;
+}
+
+.smallPlusContainer {
+    width: calc(var(--containerWidth)*.001*49);
+    height: calc(var(--containerWidth)*.001*49);
+    position: relative;
+}
+
+.smallPlusCircle {
+    width: calc(var(--containerWidth)*.001*49);
+    height: calc(var(--containerWidth)*.001*49);
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #474747;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9999px;
+}
+
+.smallPlusRect1 {
+    width: calc(var(--containerWidth)*.001*3.59);
+    height: calc(var(--containerWidth)*.001*30.48);
+    left: calc(var(--containerWidth)*.001*22.45);
+    top: calc(var(--containerWidth)*.001*10);
+    position: absolute;
+    background: #D9D9D9;
+}
+
+.smallPlusRect2 {
+    width: calc(var(--containerWidth)*.001*3.59);
+    height: calc(var(--containerWidth)*.001*30.48);
+    left: calc(var(--containerWidth)*.001*9);
+    top: calc(var(--containerWidth)*.001*27.03);
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    background: #D9D9D9
+}
+
+.smallMinusCircle {
+    width: calc(var(--containerWidth)*.001*30);
+    height: calc(var(--containerWidth)*.001*30);
+    position: absolute;
+    background: #B7B7B7;
+}
+
+.smallMinusRect {
+    width: 8%;
+    height: 62%;
+    left: 19%;
+    top: 53%;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    background: #474747;
+}
+
+.title {
+    width: calc(var(--containerWidth)*.001*500);
+    height: calc(var(--containerWidth)*.001*64);
+    right: calc(var(--containerWidth)*.001*160);
+    top: calc(var(--containerWidth)*.001*38);
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: calc(var(--containerWidth)*.001*32);
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+.circle {
+    display: flex;
+    position: absolute;
+    border-radius: 9999px;
+}
+
+.markerComponentEdit {
+    position: relative;
+}
+
+.markerComponentList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.markerComponent {
+    display: flex;
+    width: 70%;
+    height: calc(var(--containerWidth)*.001*105);
+    background-color: #d9d9d9;
+    position: relative;
+    left: 15%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: calc(var(--containerWidth)*.001*5);
+    border: calc(var(--containerWidth)*.001*0.50) #838383 solid;
+}
+
+.markerTypeText {
+    color: black;
+    font-size: calc(var(--containerWidth)*.001*48);
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: calc(var(--containerWidth)*.001*10);
+}
+
+.markerComponentMinus {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc(var(--containerWidth)*.001*150);
+    width: calc(var(--containerWidth)*.001*53);
+    height: calc(var(--containerWidth)*.001*53);
+}
+
+.tripleDotEdit {
+    display: flex;
+    position: absolute;
+    font-size: calc(var(--containerWidth)*.001*70);
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(var(--containerWidth)*.001*30);
+    right: calc(var(--containerWidth)*.001*95);
+    letter-spacing: 0px;
+    color: rgb(23, 23, 23);
+}
+
+.tripleLineEdit {
+    display: flex;
+    position: absolute;
+    font-size: calc(var(--containerWidth)*.001*70);
+    top: 43%;
+    transform: translateY(-50%);
+    width: calc(var(--containerWidth)*.001*70);
+    right: calc(var(--containerWidth)*.001*5);
+    letter-spacing: 0px;
+    color: rgb(81, 81, 81);
+    align-items: center;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    filter: brightness(130%);
+    color: rgb(117, 117, 117);
+}
+
+.clickable:active:hover {
+    filter: brightness(50%);
+}
+
+.styleEditor {
+    display: flex;
+    width: 60%;
+    background-color: #d9d9d9;
+    position: relative;
+    left: 20%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+    border-radius: calc(var(--containerWidth)*.001*5);
+    overflow-y: hidden;
+}
+
+.styleEditorContent {
+    display: flex;
+    padding: calc(var(--containerWidth)*.001*10);
+    width: 100%;
+}
+
+
+.styleList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: calc(var(--containerWidth)*.001*49);
+    padding-bottom: calc(var(--containerWidth)*.001*49);
+    margin: calc(var(--containerWidth)*.001*10);
+    font-size: calc(var(--containerWidth)*.001*32);
+    width: 100%;
+}
+
+.styleComponent {
+    display: flex;
+    position: relative;
+    height: calc(var(--containerWidth)*.001*52);
+    align-items: center;
+}
+
+.closeButton {
+    display: flex;
+    height: calc(var(--containerWidth)*.001*41);
+    width: calc(var(--containerWidth)*.001*53);
+    right: calc(var(--containerWidth)*.001*9);
+    font-weight: 600;
+    font-size: calc(var(--containerWidth)*.001*30);
+    justify-content: center;
+    color: #D9D9D9;
+    background-color: #6C6C6C;
+    border-radius: calc(var(--containerWidth)*.001*11);
+    position: absolute;
+}
+
+.closeButton:hover {
+    filter: brightness(130%);
+    color: #D9D9D9;
+}
+
+.styleEditorMinus {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(var(--containerWidth)*.001*30);
+    height: calc(var(--containerWidth)*.001*30);
+    right: 0px;
+}
+
+.styleInput {
+    position: relative;
+    height: 70%;
+    right: -51%;
+    width: 40%;
+    background: #f4f4f4;
+    border-radius: calc(var(--containerWidth)*.001*20);
+    border: calc(var(--containerWidth)*.001*1) #474747 solid;
+    font-size: calc(var(--containerWidth)*.001*20);
+    text-align: center;
+}
+
+.styleComponentBody {
+    left: calc(var(--containerWidth)*.001* -49);
+    position: absolute;
+}
+
+.styleEditorButton {
+    width: 20%;
+    right: -80%;
+    position: relative;
+}
+
+.newPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: calc(var(--containerWidth)*.001*263);
+    position: absolute;
+    background: #D9D9D9;
+    left: 5%;
+    top: calc(var(--containerWidth)*.001*120);
+    box-shadow: 0px 0px 400px rgba(0, 0, 0, 1);
+    border-radius: calc(var(--containerWidth)*.001*20);
+    border: calc(var(--containerWidth)*.001*2.50) #474747 solid;
+
+}
+
+.popUp.closeButton {
+    top: calc(var(--containerWidth)*.001*9);
+}
+
+.popUpTitle {
+    font-size: calc(var(--containerWidth)*.001*32);
+    font-weight: 600;
+    padding-top: calc(var(--containerWidth)*.001*10);
+    top: 0;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+}
+
+.nameLabel {
+    display: flex;
+
+    align-items: center;
+    font-size: calc(var(--containerWidth)*.001*32);
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    text-align: left;
+}
+
+.componentInput {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: calc(var(--containerWidth)*.001*40);
+    right: 10%;
+    width: 40%;
+    background: #f4f4f4;
+    border-radius: calc(var(--containerWidth)*.001*20);
+    border: calc(var(--containerWidth)*.001*1) #474747 solid;
+    font-size: calc(var(--containerWidth)*.001*20);
+    text-align: center;
+}
+
+.componentEditorButton {
+    position: absolute;
+    bottom: 15%;
+    right: 10%;
+    height: 13%;
+    width: 15%;
+}
+
+.newStyleInput {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: calc(var(--containerWidth)*.001*40);
+    right: 10%;
+    width: 40%;
+    background: #f4f4f4;
+    border-radius: calc(var(--containerWidth)*.001*20);
+    border: calc(var(--containerWidth)*.001*1) #474747 solid;
+    font-size: calc(var(--containerWidth)*.001*20);
+    text-align: center;
+}
+
+.resetToDefault{
+    width: 31%;
+    bottom:14%;
+    left:0%;
+    position: absolute;
+    font-size:calc(var(--containerWidth)*.001*15);
+    background:none;
+    border:none;
+}
+
+.resetToDefault{
+    width: 31%;
+    left:0%;
+    top:calc(var(--containerWidth)*.001*-20);
+    position: relative;
+    font-size:calc(var(--containerWidth)*.001*15);
+    background:none;
+    border:none;
+    color:blue;
+    text-decoration: underline;
+}
+
+.resetToDefault:hover {
+    cursor: pointer;
+}
